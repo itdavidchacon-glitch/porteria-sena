@@ -1,0 +1,42 @@
+.contenedor{
+    height: 100vh;
+    background-size: cover;
+    background-image: url(../img/fondo-de-productos-de-la-naturaleza-granja-y-luz-solar.jpg);
+
+}
+
+
+#cont{
+    margin-top: 100px;
+    gap: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+#tarjeta1{
+    background-color:  rgba(251, 249, 249, 0.5);;
+}
+
+#tarjeta2{
+    
+}
+
+#tem{
+    height: 500px;
+}
+
+#color{
+    background-color: white;
+}
+
+#colornav{
+    background-color: green;
+}
+
+.titulo{
+    margin-right: 100px;
+}
+
+.texto{
+    
+}
