@@ -1,14 +1,23 @@
-const inicio = document.getElementById('iniciarSesion')
-inicio.addEventListener('click', login)
+// Script de autenticación - Portada
+document.addEventListener('DOMContentLoaded', function() {
+    const btnIniciar = document.getElementById('iniciarSesion')
+    const inputCodigo = document.getElementById('validar1')
+    const inputPassword = document.getElementById('validar2')
 
-const codigo = document.getElementById('validar1')
+    if (btnIniciar) {
+        btnIniciar.addEventListener('click', function(e) {
+            e.preventDefault()
+            
+            const codigo = inputCodigo?.value.trim() || ''
+            const password = inputPassword?.value.trim() || ''
 
-const contrasena = document.getElementById('validar2')
+            if (!codigo || !password) {
+                alert('Por favor ingresa código y contraseña')
+                return
+            }
 
-function login(){
-if(codigo.value === ''  &&  contrasena.value === ''){
-    alert('error ')
-}else{
-    window.open('../src/1interfaz.html')
-}
-} 
+            // Navegar a la otra página
+            window.location.href = '/src/1interfaz.html'
+        })
+    }
+}) 

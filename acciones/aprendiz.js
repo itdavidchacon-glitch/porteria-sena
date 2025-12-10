@@ -4,6 +4,6 @@ inicio.addEventListener('click', devolverse)
 
 function devolverse(){
 
-    window.open('../src/1interfaz.html')
+    window.open('/src/1interfaz.html')
 }
 
